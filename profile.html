@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: url('https://acegif.com/wp-content/uploads/balloon-3.gif');">
+    <nav class="navbar navbar-light bg-light nav-design" id="nav">
+        <div class="container-fluid">
+            <div id="username"></div>
+            <button class="btn btn-outline-success btn-design" onclick="logout()">LOGOUT</button>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="btn-add">
+            <button style="  bottom: -514px;right: 50px;box-shadow: 2px 2px rgb(22, 75, 22);" id="myBtn"
+                class="btn btn-outline-success btn-design" data-toggle="modal" onclick="Startgame()">Start</button>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+  apiKey: "AIzaSyCjYFp_095kIi0sIWXk5ra7tjeY4BvXWdo",
+  authDomain: "hackathone-80609.firebaseapp.com",
+  databaseURL: "https://hackathone-80609-default-rtdb.firebaseio.com",
+  projectId: "hackathone-80609",
+  storageBucket: "hackathone-80609.appspot.com",
+  messagingSenderId: "1042745744351",
+  appId: "1:1042745744351:web:1a9db0b2183fd2c7ee826a",
+  measurementId: "G-8T7QZZP2M0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <!-- firebase -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
+
+</body>
+
+</html>
